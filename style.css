@@ -1,0 +1,45 @@
+/* RESET CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, nav{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* VARIAVEIS DE COR */
+:root{
+    --color-principal: #ff5E84;
+    --color-text: #25282B;
+}
+
+/* CORPO DO SITE */
+body{
+    font-family: "";
+    background: #e5e5e5;
+    color: var(--color-text);
+    text-align: center;
+}
+
+button{
+    color: var(--color-principal);
+    border: none;
+    font-weight: bold;
+    background: none;
+}
+
+.fat{
+    color: #ffffff;
+    background: var(--color-principal);
+}
+
+.hide{
+    display: none;
+}
