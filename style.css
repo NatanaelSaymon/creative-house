@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap');
+
 /* RESET CSS */
 *{
     margin: 0;
@@ -10,8 +12,14 @@ ul, nav{
 }
 
 a{
-	text-decoration: none;
+    color: var(--color-principal);
+    text-decoration: none;
+    font-weight: bold;
 	cursor: pointer;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 /* VARIAVEIS DE COR */
@@ -22,24 +30,110 @@ a{
 
 /* CORPO DO SITE */
 body{
-    font-family: "";
+    font-family: 'Montserrat', sans-serif;
     background: #e5e5e5;
     color: var(--color-text);
-    text-align: center;
+}
+
+/* Classe aplicada com Javascript */
+.hide{
+    display: none;
+}
+
+#container{
+    display: flex;
+    width: 80%;
+    max-width: 890px;
+    margin: 40px auto;
+}
+
+section#intro{
+    width: 300px;
+    margin-right: 20px;
+}
+
+main{
+    margin: 32px 0; 
+}
+
+p, .description{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+section#buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 32px;
 }
 
 button{
     color: var(--color-principal);
+    font-size: 14px;
+    font-weight: 18px;
+    letter-spacing: 0.2px;
     border: none;
     font-weight: bold;
     background: none;
+    cursor: pointer;
+    outline: none;
 }
 
-.fat{
+button:hover{
+    text-decoration: underline;
+}
+
+section button.fat{
     color: #ffffff;
     background: var(--color-principal);
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.16);
 }
 
-.hide{
-    display: none;
+section footer a:hover{
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+footer{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    color: #777;
+    text-align: center;
+}
+
+footer a{
+    opacity: 0.8;
+}
+
+section div.ideia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px -8px rgba(1, 1, 1, 0.1);
+}
+
+section div.ideia img{
+    width: 60px;
+    height: 60px;
+    margin-right: 32px;
+}
+
+section div.ideia p{
+    margin: 8px 0;
+    color: #777;
+}
+
+section div.ideia div.description{
+    margin: 16px 0;
 }

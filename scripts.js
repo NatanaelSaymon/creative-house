@@ -2,20 +2,13 @@ document
     .querySelector("button.fat")
     .addEventListener("click", function(){
         document
-            .querySelector("#footer")
+            .querySelector("footer")
             .classList
             .toggle("hide")
-    })
-
-
-
-
-
-
-
-
+        })
+        
 /**
- * Em javascript tudo é objeto!
+ * EM JAVASCRIPT TUDO É OBJETO!
  * 
  * document = documento HTML
  * querySelector = pesquisa de um seletor
