@@ -35,11 +35,6 @@ body{
     color: var(--color-text);
 }
 
-/* Classe aplicada com Javascript */
-.hide{
-    display: none;
-}
-
 #container{
     display: flex;
     width: 80%;
@@ -136,4 +131,103 @@ section div.ideia p{
 
 section div.ideia div.description{
     margin: 16px 0;
+}
+
+/* MODAL */
+
+div#modal{
+    background: var(--color-principal);
+    position: absolute;
+    top: 0;
+    width: 98.9vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+}
+
+div#modal .content{
+    margin-top: 85px;
+    color: #fff;
+}
+
+div#modal .content h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div#modal form{
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.content form div:nth-child(3),
+.content form div:nth-child(4),
+.content form div:nth-child(5){
+    grid-column: span 2;
+}
+
+div#modal form input,
+div#modal form textarea{
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+div#modal form label{
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+}
+
+div#modal form a{
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    background: #ffffff22;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: end;
+    transition: 400ms;
+}
+
+div#modal form a:hover{
+    text-decoration: none;
+    background: #ffffff;
+    color: var(--color-principal);
+}
+
+div#modal form button{
+    background: #fff;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    grid-column: 2; /*Movendo o button para a coluna 2*/
+    justify-self: end;
+    transition: 400ms;
+}
+
+div#modal form button:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #0984e3;
+}
+
+/* Classe aplicada com Javascript */
+#modal.hide{
+    /*display: none;  A propriedade display, NÃO aceita transition*/
+    opacity: 0;
+    visibility: hidden;
 }

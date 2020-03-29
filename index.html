@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Creative House</title>
+        <title>Home - Casa criativa</title>
 
         <!-- CSS -->
         <link rel="stylesheet" href="style.css">
@@ -34,7 +34,7 @@
                 </main>
 
                 <section id="buttons">
-                    <button> + Adicionar Ideias</button>
+                    <button onclick="onOff()"> + Adicionar Ideias</button>
                     <button class="fat">Ver ideias</button>
                 </section>
 
@@ -53,8 +53,7 @@
                         <h3>Cursos de Programação</h3>
                         <p>Estudo</p>
                         <div class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                            Iure amet culpa nisi provident dolorem, nostrum sint sunt!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         </div>
                         <a href="#">Ir para a ideia</a>
                     </div>
@@ -69,8 +68,7 @@
                         <h3>Exercicios</h3>
                         <p>Saúde</p>
                         <div class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                            Iure amet culpa nisi provident dolorem, nostrum sint sunt!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         </div>
                         <a href="#">Ir para a ideia</a>
                     </div>
@@ -85,13 +83,51 @@
                         <h3>Meditação</h3>
                         <p>Meditar</p>
                         <div class="description">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                            Iure amet culpa nisi provident dolorem, nostrum sint sunt!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.   
                         </div>
                         <a href="#">Ir para a ideia</a>
                     </div>
                 </div>
             </section>
+        </div>
+
+        <!-- MODAL -->
+        <div id="modal" class="hide">
+            <div class="content">
+                <h1>Nova Ideia</h1>
+
+                <form action="">
+                    <div class="input-wrapper">
+                        <label for="title">Título da Ideia</label>
+                        <input type="text" name="title">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="category">Categoria</label>
+                        <input type="text" name="category">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="image">Link da Imagem</label>
+                        <input type="url" name="image">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="description">Digite uma descrição para essa ideia</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="link">Link da Ideia</label>
+                        <input type="url" name="image">
+                    </div>
+                    
+                    <a href="#" onclick="onOff()">Voltar</a>
+                    <button>Salvar</button>
+
+                </form>
+
+            </div>
         </div>
         
         <!-- <footer>
