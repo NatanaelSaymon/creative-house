@@ -1,18 +1,19 @@
 <div align="center">
-
-## Creative House
-
+<img src="https://raw.githubusercontent.com/NatanaelSaymon/creative-house/master/images/logo.png">
 </div>
+<br>
 
 ## Tela Inicial
 <div align="center">
 <img src="https://raw.githubusercontent.com/NatanaelSaymon/creative-house/master/images/ImgIndex.png">
 </div>
+<br>
 
 ## Tela de Ideias
 <div align="center">
 <img src="https://raw.githubusercontent.com/NatanaelSaymon/creative-house/master/images/ImgIdeias.png">
 </div>
+<br>
 
 ## Modal para cadastrar novas ideias
 <div align="center">

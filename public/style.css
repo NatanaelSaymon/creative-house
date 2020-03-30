@@ -226,7 +226,7 @@ section div.ideia div.description{
 
 div#modal{
     background: var(--color-principal);
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
@@ -242,7 +242,7 @@ div#modal.addScroll{
 }
 
 div#modal .content{
-    margin-top: 10%;
+    margin-top: 5%;
     color: #fff;
 }
 

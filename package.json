@@ -1,0 +1,26 @@
+{
+  "name": "creative_house",
+  "version": "1.0.0",
+  "description": "Sistema para cadastrar ideias",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatanaelSaymon/Creative-House.git"
+  },
+  "keywords": [],
+  "author": "Natanael Saymon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NatanaelSaymon/Creative-House/issues"
+  },
+  "homepage": "https://github.com/NatanaelSaymon/Creative-House#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "nunjucks": "^3.2.1"
+  }
+}
