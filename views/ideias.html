@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ideias - Casa criativa</title>
+{% extends "layout.html" %}
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/style.css">
-  </head>
+{% block title %} 
+  <title>Ideias - Casa Criativa</title>
+{% endblock %}
 
-  <body id="pages-ideias">
+{% set bodyId = "pages-ideias" %}
+
+{% block content %}
+
     <div id="container">
       <header>
         <a href="/">
@@ -28,70 +26,13 @@
 
       <main>
         <section id="ideias">
-          {% for ideia in ideias %}
-            <div class="ideia">
-                <img 
-                    src="{{ideia.img}}" 
-                    alt="{{ideia.alt}}"
-                >
-                <div class="content">
-                    <h3>{{ideia.title}}</h3>
-                    <p>{{ideia.category}}</p>
-                    <div class="description">
-                      {{ideia.description}}
-                    </div>
-                    <a href="{{ideia.url}}" target="_blank">Ir para a ideia</a>
-                </div>
-            </div>
-          {% endfor %}
+          {% include "all_ideias.html" %}
         </section>
       </main>
 
       <footer>
         Com 💜 <a href="http://rocketseat.com.br" target="_blank">Rocketseat</a>
       </footer>
-    </div>   
-      <!-- MODAL -->
-      <div id="modal" class="hide">
-        <div class="content">
-            <h1>Nova Ideia</h1>
-
-            <form action="">
-                <div class="input-wrapper">
-                    <label for="title">Título da Ideia</label>
-                    <input type="text" name="title">
-                </div>
-
-                <div class="input-wrapper">
-                    <label for="category">Categoria</label>
-                    <input type="text" name="category">
-                </div>
-
-                <div class="input-wrapper">
-                    <label for="image">Link da Imagem</label>
-                    <input type="url" name="image">
-                </div>
-
-                <div class="input-wrapper">
-                    <label for="description">Digite uma descrição para essa ideia</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-
-                <div class="input-wrapper">
-                    <label for="link">Link da Ideia</label>
-                    <input type="url" name="image">
-                </div>
-                
-                <a href="#" onclick="onOff()">Voltar</a>
-                <button>Salvar</button>
-
-            </form>
-
-        </div>
     </div>
-    
-    <!--SCRIPTS DA PAGINA-->
-    <script src="/scripts.js"></script>
-  </body>
 
-</html>
+{% endblock %}

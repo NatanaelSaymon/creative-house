@@ -15,6 +15,10 @@ function onOff(){
         .toggle("addScroll")
 }
 
+function checkFields(event){
+    
+}
+
         
 /**
  * EM JAVASCRIPT TUDO É OBJETO!
