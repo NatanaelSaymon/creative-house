@@ -1,23 +1,14 @@
 function onOff(){
-    document
-        .querySelector("#modal")
-        .classList
-        .toggle("hide")
+    document.querySelector("#modal").classList.toggle("hide")
     
-    document
-        .querySelector("body")
-        .classList
-        .toggle("hideScroll")
+    document.querySelector("body").classList.toggle("hideScroll")
     
-    document
-        .querySelector("#modal")
-        .classList
-        .toggle("addScroll")
+    document.querySelector("#modal").classList.toggle("addScroll")
 }
 
-function checkFields(event){
+// function checkFields(event){
     
-}
+// }
 
         
 /**
