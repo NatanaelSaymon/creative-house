@@ -32,13 +32,12 @@ server.get("/", function(req, res){
 
     let UltimasIdeias = []
     for(let ideia of reversedIdeias){
-      if(UltimasIdeias.length < 3){
+      if(UltimasIdeias.length < 2){
         UltimasIdeias.push(ideia) //push = adicionar
       }
     }
     return res.render('index.html', { ideias: UltimasIdeias })
   })
-  
 })
 
 server.get("/ideias", function(req, res){

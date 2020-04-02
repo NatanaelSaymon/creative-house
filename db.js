@@ -40,13 +40,13 @@ db.serialize(function(){
   // })
 
   //CONSULTAR DADOS NA TABELA
-  // db.all(`SELECT * FROM ideias`, function(err, rows){
-  //   if(err) return console.log(err)
-  //   console.log(rows)
-  // })
+  db.all(`SELECT * FROM ideias`, function(err, rows){
+    if(err) return console.log(err)
+    console.log(rows)
+  })
 
   //DELETA DADOS NA TABELA
-  // db.run(`DELETE FROM ideias WHERE id= ?`, [2], function(err){
+  // db.run(`DELETE FROM ideias WHERE id= ?`, [8], function(err){
   //   if(err) return console.log(err)
   //   console.log("Deletado com sucesso!", this)
   // })
